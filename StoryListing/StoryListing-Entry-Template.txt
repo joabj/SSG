@@ -1,0 +1,15 @@
+	<div id="entry">
+		<link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+		<hed><a href=${Link}>${Headline}</a></hed>
+		<p class="date">${Published}</p>
+		<article>
+			<p>
+			<img id=StoryPhotoLeft src=${Art} width=150 height=150 alt=${Subject}/>
+			${Description} <a href=${Link}>Click to Read More...</a>
+		</article>	
+		<pre>
+		
+		
+		</pre>
+</div>
+<img id=ImageCenter src=/Tilde-Color.jpg  height=27 width=60><p> 
