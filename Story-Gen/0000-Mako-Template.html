@@ -1,0 +1,54 @@
+<!doctype html>
+<head>
+		<Title>${Headline}</Title>
+		<meta description="${Subject} ${Subtopics}"></meta>
+		<meta charset=utf-8> 
+		
+<!--OpenGraph stuff-->		
+		<meta property="og:title" content="${Headline}" />
+		<meta property="og:site_name" content="Joab Jackson, Web site"/>
+		<meta property="og:url" content="http://www.joabj.com${Link}" />
+		<meta property="og:image" content="http://www.joabj.com${Art}" />
+		<meta property="og:description" content="${Description}" />
+		<meta property="og:type" content="article" />
+		<meta property="og:locale" content="en_US" /> 
+		<meta property="article:author" content="Joab Jackson" />
+		<meta property="article:publisher" content="http://www.joabj.com" />
+		
+<!--Stuff the Web page be needing-->
+		<script src="../libraries/joabj/ImageLoader.js"></script>
+		<link rel="shortcut icon" href="/Favicon.ico" /><!--For IE-->	
+		<style rel="stylesheet" type="text/css">
+		    @import url(/SiteStyle/Index.css);
+			@import url(/SiteStyle/Story.css);
+		</style>
+</head>
+<!--#include virtual="/SiteStyle/Header.txt"-->
+<!--#include virtual="/SiteStyle/Banner.txt"-->
+			<h2><a href=http://www.joabj.com/Writing/${Topic}>${Topic}</a></h2>			
+			<p class="section-subhed">${Type}</p>
+					</div>
+		
+		<div id="entry">
+		<link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+		<hed>${Headline}</hed>
+		<p class="date">${Published}</p>
+		<article>
+			<p>
+			<a href=${ArtHomePage}>
+			<img id=StoryPhotoLeft src=${Art} width=210 height=210 alt="${Subject}"/></a>
+
+<!--Put article here-->			
+			
+		</article>	
+		</div>
+		<p>
+		<img id=ImageCenter src=/Tilde-Color.jpg  height=27 width=60>
+		</p> 
+		
+<center><h2><a href=http://www.joabj.com/Writing/${Topic}>Back</a></h2></center>
+<p>
+<!--#include virtual="/SiteStyle/Footer.txt"-->
+</body>
+<!--Handcrafted, for better or worse, by Joab Jackson, unless otherwise annotated-->
+</html>

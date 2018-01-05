@@ -1,0 +1,24 @@
+
+database name: site
+table: SiteStories
+
+mysql> describe SiteStories
+    -> ;
++--------------+---------------+------+-----+---------+-------+
+| Field        | Type          | Null | Key | Default | Extra |
++--------------+---------------+------+-----+---------+-------+
+| FileName     | varchar(255)  | NO   | PRI | NULL    |       |
+| FileLocation | varchar(255)  | YES  |     | NULL    |       |
+| Topic        | varchar(55)   | YES  |     | NULL    |       |
+| Subtopic1    | varchar(55)   | YES  |     | NULL    |       |
+| Subtopic2    | varchar(55)   | YES  |     | NULL    |       |
+| Subtopic3    | varchar(55)   | YES  |     | NULL    |       |
+| Subject      | varchar(255)  | YES  |     | NULL    |       |
+| Headline     | varchar(100)  | YES  |     | NULL    |       |
+| Description  | varchar(1000) | YES  |     | NULL    |       |
+| Published    | date          | YES  |     | NULL    |       |
+| Publication  | varchar(55)   | YES  |     | NULL    |       |
+| Type         | varchar(55)   | YES  |     | NULL    |       |
+| Art          | varchar(255)  | YES  |     | NULL    |       |
++--------------+---------------+------+-----+---------+-------+
+13 rows in set (0.01 sec)

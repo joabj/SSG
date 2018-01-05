@@ -1,0 +1,80 @@
+<html>
+<head>
+<Title>Add Story into Web Site</Title>
+<Style type="text/css">
+
+div.box {
+    box-sizing: border-box;
+    width: 80%;
+    border: 1em solid red;
+    float: center;
+}
+
+.resizedTextbox {display:block;
+				box-sizing: border-box;
+				width: 500px; height: 200px}
+
+
+</style>
+</head>
+<body>
+<pre>
+
+
+
+
+</pre>
+<div class="box">
+<FORM ACTION="AddStory.php" METHOD="Post">
+<p>
+*File Name: <INPUT TYPE="text" NAME="FileName" size="35" value="YYMM-SubGen_SubSpecific" />.html<br>
+</p>
+<p>
+File Location: www <i>(encapsulate within first and trailing slashes)</i> <INPUT TYPE="text" NAME="FileLocation" size="125" value="/Writing/Subdirectory1/"/>
+</p><p>
+Topic: <INPUT TYPE="text" NAME="Topic" size="55" />
+</p><p>
+Subtopic1: <INPUT TYPE="text" NAME="Subtopic1" size="55" />
+</p>
+<p>
+Subtopic2: <INPUT TYPE="text" NAME="Subtopic2" size="55" />
+</p><p>
+Subtopic3: <INPUT TYPE="text" NAME="Subtopic3" size="55" />
+</p><p>
+Story Subject: <INPUT TYPE="text" NAME="Subject" size="125" />
+</p>
+<p>
+Headline: <INPUT TYPE="text" NAME="Headline" size="100" />
+</p>
+<p>
+Story Description: 
+<textarea cols="100" rows="10" name="Description">
+</textarea>
+</br>
+<i>No HTML (for now)</i>
+</p>
+<p>
+Published: <INPUT TYPE="text" NAME="Published" size="8" /> 
+<i>Format: YYYYMMDD</i>
+</p>
+<p>
+Publication: <INPUT TYPE="text" NAME="Publication" size="55" />
+</p><p>
+Story Type: <INPUT TYPE="text" NAME="Type" size="55" />
+</p>
+<p>
+Image Location: www <INPUT TYPE="text" NAME="Art" size="125" value="/Photos/SubDirectory/Photo.jpg"/>
+</p>
+<p>
+<INPUT TYPE=SUBMIT VALUE="GO" />
+</FORM
+</div>
+
+<hr/>
+<p>
+
+</FORM>
+</p>
+
+</body>
+</html>
