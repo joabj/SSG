@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+		<Title>${PhotoTitle}</Title>
+		<meta description=${PhotoKeywords}></meta>
+		<meta name="author" content="Joab Jackson">
+		<meta charset=utf-8> 
+
+		<link rel="shortcut icon" href="/Favicon.ico" /><!--For IE-->	
+				
+		<style rel="stylesheet" type="text/css">
+		    @import url(/SiteStyle/Index.css);
+			@import url(/SiteStyle/Story.css);
+		</style>
+</head>
+<!--#include virtual="/SiteStyle/Header.txt"-->
+<!--#include virtual="/SiteStyle/Banner.txt"-->
+			<h2><a href=http://www.joabj.com/Photos>Photos</a></h2>			
+					</div>
+			
+	<div id="entry">
+		<link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+		<hed>${PhotoTitle}</hed>
+		<p class="date">${PhotoDate}</p>
+		<article>
+		</p>
+		<p>
+		<img id="StoryPhotoCenter"  src=${PhotoFile} width=500 height=500 alt=${PhotoTitle}/>
+		</p>
+		<hr />
+		<p>
+		<b>Description</b>: ${PhotoDescription}
+		</p>
+		<br />
+		
+		<p>
+		<b>Location</b>: ${PhotoLocation}
+		</p>
+		<br />	
+
+		<p>
+		<b>Keywords</b>: ${PhotoKeywords}
+		</p>
+		<br />	
+	
+		
+				
+			</p>
+		</article>	
+
+</div>				
+										
+<center><h2><a href=http://www.joabj.com/Photos>Back</a></h2></center>
+<p>
+<!--#include virtual="/SiteStyle/Footer.txt"-->
+</body>
+<!--Handcrafted, for better or worse, by Joab Jackson, unless otherwise annotated-->
+</html>
