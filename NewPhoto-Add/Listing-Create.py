@@ -1,19 +1,9 @@
-#This program collects all the .jpg images in a folder and makes a directory page for them, 
-#including the li nks to the source page. It assumes the source page is the same name as the
-#photo, except with an .html suffix instead of a .jpg one.
-#The working directory is defined, for now, in the GalleryDirectory variable below.
-#It creates a simple text page, with no intro or outro or metadata at this point
-#It is meant to run in the folder with the photos. The photo links are all in the single directory.
-#All the photos must be square
-#To operate, this program requires the mako template library.
-#Note, when controlled over the Web, the working directory must be writeable to all 
-
-#ToDo: Make it run from the Web
 #Richer metadata from PhotoPage
 #Automate it on a routine (with NewPhoto-Add scripted to auto dump)
 
 import glob
 import os.path
+import sys
 from mako.template import Template
 from mako.runtime import Context
 from StringIO import StringIO
@@ -21,7 +11,13 @@ from StringIO import StringIO
 
 DirectoryEntry = Template(filename='/var/www/Photos/code/Listing-Create/ListingEntryTemplate.txt') 
 
-GalleryDirectory = "/var/www/Photos/2016/"
+
+
+#Passing the name of the directory to the program:
+DirectoryName = sys.argv[1]
+DirectoryYear = sys.argv[2]
+
+GalleryDirectory = "/var/www/Photos/"+DirectoryYear+"/"+DirectoryName+"/"
 
 Gallery = GalleryDirectory + "PhotoList.txt"
 
@@ -53,3 +49,6 @@ for Photo in Photos:
 	f.write(buf.getvalue())
 
 f.close()
+
+
+#https://www.pythonforbeginners.com/system/python-sys-argv
