@@ -1,0 +1,7 @@
+<p class="PhotoCaption">
+<a href=${PhotoLink}>
+<img id="StoryPhotoCenter" src=${PhotoFile} width=450 height=253 alt="${PhotoTitle}"/>
+<i>${PhotoName}</i></a>
+</p>
+<br />
+<br />
